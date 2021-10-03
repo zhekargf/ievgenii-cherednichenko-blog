@@ -1,0 +1,4 @@
+/.idea/
+
+/var/log/*
+!/var/log/.gitkeep
