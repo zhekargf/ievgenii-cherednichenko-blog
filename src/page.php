@@ -1,5 +1,5 @@
 <?php
-require_once 'data.php';
+require_once '../src/data.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +12,11 @@ require_once 'data.php';
         footer {
             border: 1px dashed black;
         }
+
         .product-list {
             display: flex;
         }
+
         .product-list .product {
             max-width: 30%;
         }
@@ -35,24 +37,11 @@ require_once 'data.php';
         </ul>
     </nav>
 </header>
+
 <main>
-    <form method="post" action="/send-contact-us-request">
-        <h2>Contact Us</h2>
-        <div class="field">
-            <label for="contact-name">Your name:</label>
-            <input type="text" id="contact-name" placeholder="John Doe">
-        </div>
-        <div class="field">
-            <label for="contact-email">Your email:</label>
-            <input type="email" id="contact-email" placeholder="email@example.com">
-        </div>
-        <div class="field">
-            <label for="contact-question">Question:</label>
-            <textarea id="contact-question" rows="4" placeholder="Please, enter your question"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+    <?php require_once "../src/pages/$page" ?>
 </main>
+
 <footer>
     <nav>
         <ul>
