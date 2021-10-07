@@ -13,11 +13,11 @@ require_once '../src/data.php';
             border: 1px dashed black;
         }
 
-        .product-list {
+        .post-list {
             display: flex;
         }
 
-        .product-list .product {
+        .post-list .post {
             max-width: 30%;
         }
     </style>
