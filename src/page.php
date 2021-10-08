@@ -20,6 +20,12 @@ require_once '../src/data.php';
         .post-list .post {
             max-width: 30%;
         }
+        .post a {
+            display: block;
+        }
+        .author-name {
+            display: block;
+        }
     </style>
 </head>
 <body>

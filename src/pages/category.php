@@ -7,8 +7,8 @@
                     <img src="/post-placeholder.png" alt="<?= $post['name'] ?>" width="200"/>
                 </a>
                 <a href="/<?= $post['url'] ?>" title="<?= $post['name'] ?>"><?= $post['name'] ?></a>
-                <span>$<?= number_format($post['price'], 2) ?></span>
-                <button type="button">Add To Cart</button>
+                <div class="author-name">author: <?= $post['author_name'] ?></div>
+                <div><?= $post['publication_date'] ?></div>
             </div>
         <?php endforeach; ?>
     </div>
